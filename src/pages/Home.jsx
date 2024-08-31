@@ -5,9 +5,10 @@ import React, { useRef } from 'react'
 import Container from '../Components/Container'
 import iphoneImg from "../img/iphone-image.png"
 import { useSelector } from "react-redux";
-import CategoryCard from "../Components/pageComp/categoryCard";
 import ProductCard from "../Components/pageComp/ProductCard";
 import { Link } from "react-router-dom";
+import CategoryCard1 from "../Components/pageComp/CategoryCard1";
+
 const Home = () => {
     const { categories, isCategoryLoad } = useSelector(state => state.category)
     const { products, isProductLoad, isProductError } = useSelector(state => state.product)
@@ -63,7 +64,7 @@ const Home = () => {
                             </div>
                         ))
                             : categories.map(item => (
-                                <CategoryCard item={item} key={item.id} loading={isCategoryLoad} />
+                                <CategoryCard1 item={item} key={item.id} loading={isCategoryLoad} />
                             ))}
                     </div>
                 </Container>

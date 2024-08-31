@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { filteredProductsData } from '../../store/slices/productSlices'
 
-const CategoryCard = ({item}) => {
-    const {products} = useSelector(state => state.product)
+const CategoryCard1 = ({ item }) => {
+    const { products } = useSelector(state => state.product)
     const dispatch = useDispatch()
     const navigate = useNavigate()
     function filteredProduct() {
@@ -22,4 +22,4 @@ const CategoryCard = ({item}) => {
     )
 }
 
-export default CategoryCard
+export default CategoryCard1
