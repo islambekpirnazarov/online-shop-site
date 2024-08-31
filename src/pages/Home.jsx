@@ -3,7 +3,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import React, { useRef } from 'react'
 import Container from '../Components/Container'
-import iphoneImg from "../img/IPhoneImage.png"
+import iphoneImg from "../img/iphone-image.png"
 import { useSelector } from "react-redux";
 import CategoryCard from "../Components/pageComp/categoryCard";
 import ProductCard from "../Components/pageComp/ProductCard";
