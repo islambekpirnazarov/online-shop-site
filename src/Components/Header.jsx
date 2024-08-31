@@ -72,7 +72,7 @@ const Header = () => {
                     <Link onClick={() => dispatch(toggleMenu())} to={"/basket"}>
                         <li className="relative">
                             <span className="text-[25px]"><BsCart3 /></span>
-                            <span className="absolute top-[-12px] right-[-10px] font-bold bg-gray-400 w-[20px] h-[20px] rounded-full flex items-center justify-center">0</span>
+                            <span className="absolute top-[-12px] right-[-10px] font-bold bg-gray-400 w-[20px] h-[20px] rounded-full flex items-center justify-center">{cartItems.length}</span>
                         </li>
                     </Link>
                 </ul>}
