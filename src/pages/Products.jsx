@@ -1,5 +1,4 @@
 import { MdKeyboardArrowRight } from "react-icons/md";
-import React, { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import ProductCard from '../Components/pageComp/ProductCard'
 import Container from '../Components/Container'
